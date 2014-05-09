@@ -1,0 +1,13 @@
+## Download data from working directory
+## Identify column types before downloadin all of the data
+## Read Data setting the header = TRUE sep = ";" and colClasses
+## Only read the data that matches the relevant dates
+## Change the dates to date format
+## What do we do with the Time field
+
+## Draw histogram on screen
+## Change to png format 480 x 480
+## Make png file plot1.png
+
+## 
+
