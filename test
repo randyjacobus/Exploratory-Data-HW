@@ -1,10 +1,17 @@
 ## Download data from working directory
 ## Identify column types before downloadin all of the data
-## Read Data setting the header = TRUE sep = ";" and colClasses
+## Read Data setting the header = TRUE sep = ";" and colClasses make sure no factors.
 ## Only read the data that matches the relevant dates
 ## Change the dates to date format
 ## What do we do with the Time field
+## read in date/time info in format 'm/d/y h:m:s'
+dates <- c("02/27/92", "02/27/92", "01/14/92", "02/28/92", "02/01/92")
+times <- c("23:03:20", "22:29:56", "01:03:30", "18:21:03", "16:56:26")
+x <- paste(dates, times)
+strptime(x, "%m/%d/%y %H:%M:%S")
 
+x	
+An object to be converted: a character vector for strptime, an object which can be converted to "POSIXlt" for strftime.
 ## Draw histogram on screen
 
 ## How do you make png file?
@@ -12,6 +19,8 @@
 ## Make png file plot1.png
 
 ## How do we get days on the x axis
+drawxaxis(x, tick.tstep = "auto", lab.tstep = "auto", 
+          lab.fmt=NULL, cex.axis=1, ...)
 
 
 ## How do you make line chart?
